@@ -1,20 +1,17 @@
 # Unidad 2. Evidencia de Aprendizaje 2. Aplicación con JPA
 
 Autor:
-
 Duvan Arley Botero Rivillas
 CC:1193432712
 
 
 Profesor:
-
 Juan Esteban Zabala Daza
 
 
 Tecnología en Desarrollo de Software
 
 Curso:
-
 Énfasis 2B: Persistencia y Datos Transaccionales -PREELEC2201PC-TDS0055
 
 Institución Universitaria Digital de Antioquia
