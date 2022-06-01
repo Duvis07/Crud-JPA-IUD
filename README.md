@@ -50,7 +50,7 @@ Buenas noches profesor adjunto solucion  de dicha actividad, en este caso se esc
 
 ![image](https://user-images.githubusercontent.com/96325513/171314699-f21711f1-827a-4e88-b48b-71a0aa38e245.png)
 
-6--Base de datos depues de hacer las diferentes peticiones HTTP
+7--Base de datos depues de hacer las diferentes peticiones HTTP
 
 ![image](https://user-images.githubusercontent.com/96325513/171315603-8809ba2a-e58e-40bc-b7fa-70d7a553ffcf.png)
 
