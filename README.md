@@ -1,4 +1,24 @@
 # Unidad 2. Evidencia de Aprendizaje 2. Aplicación con JPA
+
+Autor:
+
+Duvan Arley Botero Rivillas
+CC:1193432712
+
+
+Profesor:
+Juan Esteban Zabala Daza
+
+
+Tecnología en Desarrollo de Software
+
+Curso:
+Énfasis 2B: Persistencia y Datos Transaccionales -PREELEC2201PC-TDS0055
+
+Institución Universitaria Digital de Antioquia
+Abejorral/Antioquia
+
+
 Buenas noches profesor adjunto solucion  de dicha actividad, en este caso se escogio la tabla clientes, pero en mi caso el nombre de la base de datos es clientes y el nombre de la tabla usuarios.En esta actividad, se realizo un crud por medio de JPA, ademas de eso se probo la proyecto mediante postman para verificar su correcto funcionamiento, en  el  que se pudo evidenciar que todas las peticiones HTTP funcionaron correctamente.
 
 1-Base de datos creada Msql
