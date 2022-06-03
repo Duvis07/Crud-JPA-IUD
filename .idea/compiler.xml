@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Iud" />
         <module name="Aplicación con JPA" />
+        <module name="Crud-JPA-IUD" />
         <module name="democrud" />
         <module name="demoCrudTEST" />
       </profile>
@@ -17,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Aplicación con JPA" options="-parameters" />
+      <module name="Crud-JPA-IUD" options="-parameters" />
       <module name="Iud" options="-parameters" />
       <module name="demoCrudTEST" options="-parameters" />
       <module name="democrud" options="-parameters" />

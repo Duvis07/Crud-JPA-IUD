@@ -3,25 +3,29 @@ package com.crud.democrud.controllers;
 import com.crud.democrud.models.UsuarioModel;
 import com.crud.democrud.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
 @CrossOrigin
-@RestController
+@Controller
 @RequestMapping("/usuario")
 public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;
 
     @GetMapping()
-    public ArrayList<UsuarioModel> obtenerUsuarios() {
-        return usuarioService.obtenerUsuarios();
+    public String obtenerUsuarios(Model model) {
+        model.addAttribute("usuarioModel",usuarioService.obtenerUsuarios());
+        return "usuarios";
     }
 
+
     @PostMapping()
-    public UsuarioModel guardarUsuario(@RequestBody UsuarioModel usuarioModel) {
+    public UsuarioModel guardarUsuario(@ModelAttribute UsuarioModel usuarioModel) {
         return this.usuarioService.guardarUsuario(usuarioModel);
     }
 
