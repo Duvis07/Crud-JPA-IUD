@@ -12,22 +12,29 @@ import java.util.Optional;
 
 @CrossOrigin
 @Controller
-@RequestMapping("/usuario")
+/*@RequestMapping("/usuario")*/
 public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;
 
-    @GetMapping()
-    public String obtenerUsuarios(Model model) {
-        model.addAttribute("usuarioModel",usuarioService.obtenerUsuarios());
-        return "usuarios";
-    }
+      @GetMapping({"/usuarios","/"})
+      public String obtenerUsuarios(Model model) {
+          model.addAttribute("usuarioModel", usuarioService.obtenerUsuarios());
+          return "usuarios";
+      }
+   @GetMapping("/usuarios/nuevo")
+    public String crearUsuarioForm( Model modelo) {
+       UsuarioModel usuarioModel = new UsuarioModel();
+       modelo.addAttribute("usuarioModel", usuarioModel);
+       return "crear_usuario";
+
+   }
 
 
-    @PostMapping()
-    public UsuarioModel guardarUsuario(@ModelAttribute UsuarioModel usuarioModel) {
+   /* @PostMapping(value = "/usuario/nuevo")
+    public UsuarioModel guardarUsuario(@RequestBody UsuarioModel usuarioModel) {
         return this.usuarioService.guardarUsuario(usuarioModel);
-    }
+    }*/
 
     @PutMapping(path = "/{id}")
     public UsuarioModel update(@PathVariable("id") Long id, @RequestBody UsuarioModel usuarioModel) {
